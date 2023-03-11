@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.headline {
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 3rem;
+} 
+/* 
+.content > h1 {
+    font-size: 3rem;
+} */
+
+.action {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.your-weather__action, .search-weather__action {
+    cursor: pointer;
+}
+
+.your-weather__action.active, .search-weather__action.active {
+    padding: 0.5rem 1rem;
+    border: 0.125rem solid gold;
+    border-radius: 1rem;
+}
+
+.your-weather__action:active, .search-weather__action:active {
+    scale: 0.95;
+}
+
+.your-weather {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.your-weather > h4, .your-weather > p {
+    font-size: 1.5rem;
+}
+
+.location-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.gps-btn {
+    all: unset;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    border: 0.125rem solid white;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.gps-btn:active {
+    scale: 0.95;
+    border: 0.125rem solid gold;
+}
+
+.gif {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+}
+
+.search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.search-input-div {
+    display: none;
+}
+
+.search-input {
+    width: 50vw;
+    min-width: 13rem;
+    /* width: clamp(13rem, 50); */
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.search-input:focus {
+    border: 0.125rem solid gold;
+}
+
+.search-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.search-btn {
+    border: 0.125rem solid white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0.25rem;
+}
+
+.search-btn:active {
+    scale: 0.9;
+}
+
+.error-page {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.error-page > p {
+    font-size: 1.25rem;
+}
+
+.error-page > img {
+    width: 200px;
+}
+
+.render-weather {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.city-country-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.city-name {
+    font-size: 2.5rem;
+}
+
+.city-country-img > img {
+    width: 40px;
+    height: 40px;
+}
+
+.weather-details {
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 1025px) {
+    .weather-details {
+        flex-direction: column;
+    }
+}
+
+.weather-description {
+    font-size: 2rem;
+}
+
+.weather-description-img {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.temparature {
+    font-size: 2rem;
+}
+
+.wind-speed, .humidity, .clouds {
+    padding: 2rem 3rem;
+    width: 250px;
+    border: 0.125rem solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    background-color: rgba(219, 226, 239, 0.5);
+}
+
+.wind-speed > img, .humidity > img, .clouds > img {
+    width: 60px;
+    height: 60px;
+    /* border: 0.125rem solid white; */
+}
+
+.page-loading {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.page-loading > p {
+    margin: auto;
+}
+
+
+.active {
+    display: flex;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <h1 class="headline">WEATHER APP</h1>
+            <div class="action">
+                <p class="your-weather__action active">Your Weather</p>
+                <p class="search-weather__action">Search Weather</p>
+            </div>
+            <!-- Your Weather -->
+            <div class="your-weather">
+                <img src="./assets/location.png" class="location-logo" loading="lazy">
+                <h4>Grant Location Access</h2>
+                <p>Allow us to get your GPS Location</p>
+                <button class="gps-btn">GRANT ACCESS</button>
+            </div>
+            <!-- Searching Weather of a particular City Page -->
+            <div class="search-input-div">
+                <form method="get" class="search-form">
+                    <input class="search-input" type="text" placeholder="Search for city...">
+                    <button class="search-btn" type="submit">
+                        <img class="search-logo" src="./assets/search.png" loading="lazy">
+                    </button>
+                </form>
+            </div>
+            <!-- Loading Page -->
+            <div class="page-loading active">
+                <img src="./assets/loading.gif" class="gif" loading="lazy">
+                <p class="status">Loading Please Wait</p>
+            </div>
+            <!-- Render Weather Info -->
+            <div class="render-weather">
+                <div class="city-country-img">
+                    <h3 class="city-name"></h3>
+                    <img class="country-icon" src="" loading="lazy">
+                </div>
+                <p class="weather-description"></p>
+                <img src="" class="weather-description-img" loading="lazy">
+                <p class="temparature"></p>
+                <div class="weather-details">
+                    <div class="wind-speed">
+                        <img src="./assets/wind.png" loading="lazy">
+                        <h5>WIND SPEED</h5>
+                        <p class="wind-speed-value"></p>
+                    </div>
+                    <div class="humidity">
+                        <img src="./assets/humidity.png" loading="lazy">
+                        <h5>HUMIDITY</h5> 
+                        <p class="humidity-value"></p>
+                    </div>
+                    <div class="clouds">
+                        <img src="./assets/cloud.png" loading="lazy">
+                        <h5>CLOUDS</h5>
+                        <p class="cloudiness-value"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 404 Error Page -->
+            <div class="error-page">
+                <img src="./assets/not-found.png" loading="lazy">
+                <p>City Not Found</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
